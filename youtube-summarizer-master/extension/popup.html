@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h2 {
+  text-align: center;
+  font-size: 15px;
+}
+body {
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 180px;
+  height: 150px;
+}
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.custom-select {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+#text-out {
+  margin: 10px auto;
+  font-size: 14px;
+  color: red;
+}
+
+.dropdown-text{
+  font-size: 14px;
+}
+</style>
+
+<script src="popup.js"> </script>
+
+</head>
+<body>
+
+<h2>YouTube Summarizer</h2>
+
+<div class="custom-select">
+    <select id="percent-dropdown">
+      <option class="dropdown-text" value="0">Summary Percentage</option>
+      <option class="dropdown-text" value="1">10</option>
+      <option class="dropdown-text" value="2">20</option>
+      <option class="dropdown-text" value="3">30</option>
+      <option class="dropdown-text" value="4">40</option>
+      <option class="dropdown-text" value="5">50</option>
+      <option class="dropdown-text" value="6">60</option>
+      <option class="dropdown-text" value="7">70</option>
+    </select>
+  </div>
+
+<button class="button"> <b>Summarize</b> </button>
+
+<div id="text-out">
+</div>
+
+</body>
+</html>
